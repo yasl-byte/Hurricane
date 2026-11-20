@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f1115">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Hurricane">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<title>Hurricane Younes</title>
+</head>
+<body>
+<header>
+  <div class="hrow"><div class="brand">Hurricane <em>Younes</em></div><button class="ib" id="setb" data-a="settings" aria-label="Réglages"></button></div>
+  <div class="dnav"><button class="ib" data-a="dprev" aria-label="Jour précédent">‹</button><div class="dl" id="dlab"></div><button class="ib" data-a="dnext" aria-label="Jour suivant">›</button><button class="chip" id="dtoday" data-a="dtoday">Auj.</button></div>
+</header>
+<main id="view"></main>
+<nav id="tabs"></nav>
+<div id="modal" class="hidden"></div>
+<div id="celeb" class="hidden"><img alt="Célébration" src=""><div class="ct"></div><div class="cs"></div><div class="xs" style="color:#aaa">Touche pour fermer</div></div>
+<input type="file" id="impf" accept="application/json,.json" hidden>
+<div id="toast"></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
